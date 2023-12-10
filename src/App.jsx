@@ -1,4 +1,3 @@
-// import { useState } from 'react'
 import './index.css'
 import Header from './components/Header'
 import Meme from './components/Meme'
