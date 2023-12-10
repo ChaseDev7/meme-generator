@@ -63,11 +63,18 @@ body {
   margin-right: 30px;
 }
 
-.form {
-  margin-top: 70px;
+.form-container {
   display: flex;
+  margin-top: 70px;
+  flex-direction: column;
+  align-items: center;
   width: 100vw;
-  justify-content: space-evenly;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
 }
 
 fieldset {
@@ -77,9 +84,36 @@ fieldset {
 .top-text-container, .bottom-text-container {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 20px 0;
+  width: 80vw;
+  padding: 0;
 }
 
 .top-text-label, .bottom-text-label {
   font-size: 12px;
+}
+
+#top-text {
+  margin-right: 10px;
+}
+
+.bottom-text-label, #bottom-text {
+  margin-left: 10px;
+}
+
+input {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.meme-button {
+  background-color: #A626D3;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 80vw;
+  border-radius: 7px;
+  box-shadow: 0px 3px 2px 1px lightgray;
+  cursor: pointer;
 }
