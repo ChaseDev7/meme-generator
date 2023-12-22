@@ -40,6 +40,7 @@ body {
   right: 0;
   background-color: #A626D3;
   height: 70px;
+  z-index: 1;
 }
 
 .header-logo {
@@ -85,7 +86,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   margin: 20px 0;
-  width: 80vw;
+  width: 80%;
   padding: 0;
 }
 
@@ -116,4 +117,41 @@ input {
   border-radius: 7px;
   box-shadow: 0px 3px 2px 1px lightgray;
   cursor: pointer;
+}
+
+.meme-image {
+  margin-top: 20px;
+  max-width: 500px;
+}
+
+.meme-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+    3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    0 3px 0 #000,
+    3px 0 0 #000,
+    0 -3px 0 #000,
+    -3px 0 0 #000,
+    3px 3px 5px #000;
+}
+
+.meme-top-text {
+  position: absolute;
+  top: 10px;
+}
+
+.meme-bottom-text {
+  position: absolute;
+  bottom: 10px;
 }
