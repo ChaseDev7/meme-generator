@@ -12,7 +12,6 @@ export default function Meme() {
   const [allMemes, setAllMemes] = useState([])
 
   useEffect(function() {
-    console.log("Effect ran")
     fetch("https://api.imgflip.com/get_memes")
     .then(res => res.json())
     .then(data => setAllMemes(data.data.memes))
